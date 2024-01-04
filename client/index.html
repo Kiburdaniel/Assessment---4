@@ -7,10 +7,20 @@
   <body class="container"></body>
     <button id="complimentButton">Get a compliment</button>
     <button id="fortuneButton">Get a fortune</button>
+    <input type = "submit" value = "Send Request"/>
     <button onclick="myFunction()">click me</button>
-    <script>function myFunction(){alert("button clickrd!");}</script>
+    <script>function myFunction(){alert("button clicked!");}</script>
+    <script type="text/javascript">
+      function SubmitForm(){
+
+        myForm.submit();
+      }
+      function ShowResponse()
+      {
+      }</script>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-    <script axios.get('file:///Users/hbstudent/src/assessment-4/client/index.html//api/fortune').then(function (response){console.log(response.data);}).catch(function(error){console.log(error)});</script></script>
+    <script axios.get('file:///Users/hbstudent/src/assessment-4/client/index.html//api/fortune')
+    .then(function (response){console.log(response.data);}).catch(function(error){console.log(error)});></script>
     <script src="main.js"></script>
     
   </body>

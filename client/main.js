@@ -1,5 +1,5 @@
-const complimentBtn = document.querySelector("#complimentButton")
-const fortuneBtn = (document.querySelector("#fortuneButton"))
+const complimentBtn = document.querySelector("#complimentButton");
+const fortuneBtn = document.querySelector("#fortuneButton");
 
 
 const getCompliment = () => {
@@ -17,16 +17,4 @@ const getFortune = () => {
     });
 };
 complimentBtn.addEventListener('click', getCompliment)
-
-const complimentBtn = document.querySelector("#complimentButton")
-const fortuneBtn = document.querySelector("#fortuneButton")
-
-const getFortne = () => {
-    axios.get("http://localhost:4000/api/fortune/")
-        .then(res => {
-            const data = res.data;
-            alert(data);
-    });
-};
-
-fortuneBtn.addEventListener('click', getFortne)
+fortuneBtn.addEventListener('click', getFortune)

@@ -10,7 +10,5 @@ const controller = require('./controller')
 app.get("/api/compliment", controller.getCompliment);
 app.get("/api/fortune", controller.getFortune);
 app.get("/api/randomNumber", controller.getRandomNumber);
-app.get('/api/fortune', (req, res) =>{res.send("this is the rersponse from the server!");});
-app.get('/api/randomNumber', (req, res) =>{res.send("This is the response from server");});
-
+app.get("/api/review", controller.getReview);
 app.listen(4000, () => console.log("Server running on 4000"));
